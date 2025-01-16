@@ -17,7 +17,7 @@ interface Product {
   }[];
 }
 
-interface Props {
+interface PageProps {
   params: {
     slug: string;
   };
@@ -49,7 +49,7 @@ const getData = async (slug: string): Promise<Product | null> => {
 };
 
 // Generate dynamic metadata for SEO
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: PageProps) {
   const product = await getData(params.slug);
   return {
     title: product ? product.title : "Product Not Found",
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 // Product Page Component
-const ProductPage = async ({ params }: Props) => {
+const ProductPage = async ({ params }: PageProps) => {
   const { slug } = params;
 
   // Fetch product data using the slug

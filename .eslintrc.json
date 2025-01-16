@@ -12,12 +12,14 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals"
+    
   ],
   "plugins": [
     "react",
     "@typescript-eslint",
     "next"
   ],
+  
   "settings": {
     "react": {
       "version": "detect"
