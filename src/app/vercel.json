@@ -1,0 +1,9 @@
+{
+    "build": {
+      "env": {
+        "NEXT_PUBLIC_SANITY_PROJECT_ID": "i4ps3shv",
+        "NEXT_PUBLIC_SANITY_DATASET": "production"
+      }
+    }
+  }
+  
